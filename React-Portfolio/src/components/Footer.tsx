@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 const Footer: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const Footer: React.FC = () => {
           href="https://x.com/AdiPatel095"
           target="_blank"
         >
-          Twitter
+          X
         </a>
       </div>
       <p>&copy; {new Date().getFullYear()} Adi Patel. All rights reserved.</p>

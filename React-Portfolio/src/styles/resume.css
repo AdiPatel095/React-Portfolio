@@ -1,0 +1,49 @@
+/* ============ RESUME SECTION WRAPPER ============ */
+.resume {
+    padding: 2rem;
+    /* If your site background is dark, make the text light */
+    color: #fff;
+    /* background-color: #1A2B4C;  // Or whatever your main color is */
+  }
+  
+  .resume h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resume p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* The link to download the resume */
+  .resume a {
+    color: #fff;            /* Link color */
+    text-decoration: underline;
+    font-style: italic;     /* optional to match the example look */
+    transition: color 0.2s;
+  }
+  
+  .resume a:hover {
+    color: #ccc;
+  }
+  
+  /* Example subheading styling: “Proficiencies” */
+  .resume h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;  /* optional, matches “Front-end Proficiencies” etc. */
+  }
+  
+  /* ============ BULLET LISTS ============ */
+  .resume ul {
+    list-style-type: circle; /* or disc, or none + custom bullet */
+    margin-left: 1.5rem;     /* indentation for bullet list */
+    margin-bottom: 2rem;
+  }
+  
+  .resume li {
+    margin-bottom: 0.5rem;
+  }
+  

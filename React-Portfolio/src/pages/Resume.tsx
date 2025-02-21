@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Resume.css';
 
 const Resume: React.FC = () => {
   const proficiencies: string[] = [

@@ -1,5 +1,6 @@
 import React from 'react';
 import Project, { ProjectProps } from '../components/Project';
+import '../styles/Portfolio.css';
 
 // An array of projects to display on the portfolio page
 const projects: ProjectProps[] = [
@@ -25,8 +26,9 @@ const projects: ProjectProps[] = [
 
 const Portfolio: React.FC = () => {
   return (
-    <section className="portfolio">
-      <h2>Portfolio</h2>
+    <div>
+      <h2 className="header-container">Portfolio</h2>
+      <section className="portfolio">
       <div className="projects-container">
         {projects.map((project, index) => (
           <Project
@@ -39,6 +41,7 @@ const Portfolio: React.FC = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

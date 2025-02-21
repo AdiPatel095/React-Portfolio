@@ -1,0 +1,39 @@
+/* src/styles/Navigation.css */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* space between items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    /* no bullet points, handled by list-style: none above */
+  }
+  
+  .navigation a {
+    color: #fff;         /* White text on dark background */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;  /* so we can do an underline or border effect on hover/active */
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;  /* center the nav horizontally */
+    align-items: center;
+    gap: 2rem;                /* space between links */
+    height: 100%;             /* so it fills the header vertically */
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  .navigation a.active {
+    /* Show an underline or border for active link */
+    border-bottom: 2px solid #fff;
+  }
+  
+  

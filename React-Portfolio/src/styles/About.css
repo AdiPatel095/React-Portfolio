@@ -1,0 +1,27 @@
+/* src/styles/About.css */
+.about {
+    padding: 3rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph styling */
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: left; /* or center, depending on preference */
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 // Define the props interface for type checking
 export interface ProjectProps {
@@ -10,16 +11,33 @@ export interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ title, image, deployedUrl, repoUrl }) => {
   return (
-    <div className="project">
-      <img src={image} alt={`${title} screenshot`} className="project-image" />
-      <h3 className="project-title">{title}</h3>
-      <div className="project-links">
-        <a href={deployedUrl} target="_blank">
-          View App
+    <div className="project-card">
+      <div className="project-image-wrapper">
+        <img src={image} alt={`${title} screenshot`} className="project-image" />
+      </div>
+
+      <div className="project-content">
+        {/* Title is now a clickable link to the deployed app */}
+        <a
+          className="project-title"
+          href={deployedUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {title}
         </a>
-        <a href={repoUrl} target="_blank">
-          GitHub Repo
-        </a>
+
+        {/* GitHub icon that links to the repo */}
+        <div className="project-links">
+          <a
+            href={repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="github-link"
+          >
+            <FaGithub size={24} /> {/* or any size you prefer */}
+          </a>
+        </div>
       </div>
     </div>
   );

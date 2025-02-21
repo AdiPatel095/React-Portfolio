@@ -1,0 +1,31 @@
+/* src/styles/Header.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.header {
+    /* Adjust height as needed */
+    height: 150px;
+    background: url('../assets/images/header-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* You might want to pad the header so text doesn’t touch edges */
+    padding: 0 2rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* If you want to limit width */
+    margin: 0 auto;
+  }
+  
+  .developer-name {
+    font-size: 2rem;
+    color: #fff; /* White or a light color stands out on a dark background */
+    font-family: 'Fredericka the Great', cursive, sans-serif;
+  }
+  

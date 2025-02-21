@@ -1,0 +1,82 @@
+/* Constrain the entire portfolio content to a max width */
+.header-container{
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.portfolio {
+    padding: 2rem;
+    /* Centers all content. You can tweak this or remove if you prefer. */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* The grid container that holds all cards */
+  .projects-container {
+    display: grid;
+    /* As many columns as fit, each at least 300px wide */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    /* Caps how wide the grid can get */
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Optional: give each card a max width so they don’t stretch too wide */
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;  /* center the card if there's leftover grid space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Keep image from blowing up too large */
+  .project-image-wrapper {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Position your title and GitHub icon as desired */
+  .project-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Example: make the title link */
+  .project-title {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* GitHub icon link */
+  .github-link {
+    color: #333;
+    transition: color 0.2s;
+  }
+  
+  .github-link:hover {
+    color: #007BFF;
+  }
+  
