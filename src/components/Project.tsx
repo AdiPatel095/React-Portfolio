@@ -17,7 +17,6 @@ const Project: React.FC<ProjectProps> = ({ title, image, deployedUrl, repoUrl })
       </div>
 
       <div className="project-content">
-        {/* Title is now a clickable link to the deployed app */}
         <a
           className="project-title"
           href={deployedUrl}
@@ -27,7 +26,6 @@ const Project: React.FC<ProjectProps> = ({ title, image, deployedUrl, repoUrl })
           {title}
         </a>
 
-        {/* GitHub icon that links to the repo */}
         <div className="project-links">
           <a
             href={repoUrl}
@@ -35,7 +33,7 @@ const Project: React.FC<ProjectProps> = ({ title, image, deployedUrl, repoUrl })
             rel="noreferrer"
             className="github-link"
           >
-            <FaGithub size={24} /> {/* or any size you prefer */}
+            <FaGithub size={24} />
           </a>
         </div>
       </div>

@@ -5,10 +5,10 @@ import '../styles/Portfolio.css';
 // An array of projects to display on the portfolio page
 const projects: ProjectProps[] = [
   {
-    title: 'Project One',
+    title: 'CineTracker',
     image: '/src/assets/images/project-one.png',
-    deployedUrl: 'https://example.com/project-one',
-    repoUrl: 'https://github.com/yourusername/project-one',
+    deployedUrl: 'https://cinetracker-e4mj.onrender.com',
+    repoUrl: 'https://github.com/AdiPatel095/CineTracker',
   },
   {
     title: 'Project Two',

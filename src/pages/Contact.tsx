@@ -29,8 +29,6 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
-
-    // Submit logic (e.g., send data to a server, email service, etc.)
     console.log('Form submitted:', { name, email, message });
 
     alert('Thank you! Your message has been sent.');
