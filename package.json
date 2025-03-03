@@ -7,7 +7,7 @@
     "dev": "tsc -b && vite build && vite",
     "build": "tsc -b && vite build",
     "render-build": "tsc -b && vite build",
-    "render-run": "vite",
+    "render-run": "vite preview --port $PORT",
     "lint": "eslint .",
     "preview": "vite preview"
   },
